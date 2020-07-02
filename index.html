@@ -1,0 +1,926 @@
+<html>
+  <head>
+    <title>CSS Framework</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <style>
+      body {
+        background-color: #f7f7ff;
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      section {
+        margin: 3rem 0;
+        padding: 1.5rem;
+        background-color: var(--white);
+        border-radius: var(--border-radius);
+        box-shadow: 0rem 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+      }
+      .jumbotron {
+        text-align: center;
+        margin: 12rem;
+      }
+      .jumbotron .heading {
+        font-weight: 100;
+        font-size: 7.2rem;
+      }
+      .jumbotron .heading span {
+        font-weight: 500;
+      }
+      .jumbotron .subheading {
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="heading">
+        Write a CSS framework <br /><span>from scratch</span>
+      </div>
+      <div class="subheading">
+        <u>In development!</u> Putting together all the basic building blocks
+        one at a time!
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Typography -->
+
+      <div class="divider"><span>Typography</span></div>
+
+      <section>
+        <h1>h1 heading</h1>
+        <h2>h2 heading</h2>
+        <h3>h3 heading</h3>
+        <h4>h4 heading</h4>
+        <h5>h5 heading</h5>
+        <h6>h6 heading</h6>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit Earum maxime
+          optio iusto debitis dolor porro odit fugiat sapiente nisi dignissimos.
+          Sint eum maiores incidunt suscipit minima quam repudiandae? Vero,
+          ipsum.
+        </p>
+
+        <ul class="list-unstyled">
+          <li>Car</li>
+          <li>Motar</li>
+          <li>Plane</li>
+        </ul>
+      </section>
+
+      <!-- Grid -->
+
+      <div class="divider"><span>Grid</span></div>
+
+      <section>
+        <div class="row">
+          <div class="col-3"><div class="yellow p-1">1</div></div>
+          <div class="col-6"><div class="yellow p-1">2</div></div>
+          <div class="col-3"><div class="yellow p-1">3</div></div>
+        </div>
+
+        <div class="row">
+          <div class="col-3"><div class="yellow p-1">1</div></div>
+          <div class="col-9"><div class="yellow p-1">2</div></div>
+        </div>
+      </section>
+
+      <!-- Button -->
+
+      <div class="divider"><span>Button</span></div>
+
+      <section>
+        <div class="row">
+          <div class="col-12">
+            <button class="button">Button</button>
+            <button class="button button-primary">primary</button>
+            <button class="button button-secondary">secondary</button>
+            <button class="button button-disabled">disabled</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button class="button button-red">red</button>
+            <button class="button button-orange">orange</button>
+            <button class="button button-yellow">yellow</button>
+            <button class="button button-teal">teal</button>
+            <button class="button button-lime">lime</button>
+            <button class="button button-green">green</button>
+            <button class="button button-blue">blue</button>
+            <button class="button button-indigo">indigo</button>
+            <button class="button button-purple">purple</button>
+            <button class="button button-pink">pink</button>
+            <button class="button button-brown">brown</button>
+            <button class="button button-black">black</button>
+            <button class="button button-grey">grey</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button class="button button-outline button-red">red</button>
+            <button class="button button-outline button-orange">orange</button>
+            <button class="button button-outline button-yellow">yellow</button>
+            <button class="button button-outline button-teal">teal</button>
+            <button class="button button-outline button-lime">lime</button>
+            <button class="button button-outline button-green">green</button>
+            <button class="button button-outline button-blue">blue</button>
+            <button class="button button-outline button-indigo">indigo</button>
+            <button class="button button-outline button-purple">purple</button>
+            <button class="button button-outline button-pink">pink</button>
+            <button class="button button-outline button-brown">brown</button>
+            <button class="button button-outline button-black">black</button>
+            <button class="button button-outline button-grey">grey</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button class="button button-link button-red">red</button>
+            <button class="button button-link button-orange">orange</button>
+            <button class="button button-link button-yellow">yellow</button>
+            <button class="button button-link button-teal">teal</button>
+            <button class="button button-link button-lime">lime</button>
+            <button class="button button-link button-green">green</button>
+            <button class="button button-link button-blue">blue</button>
+            <button class="button button-link button-indigo">indigo</button>
+            <button class="button button-link button-purple">purple</button>
+            <button class="button button-link button-pink">pink</button>
+            <button class="button button-link button-brown">brown</button>
+            <button class="button button-link button-black">black</button>
+            <button class="button button-link button-grey">grey</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alert -->
+
+      <div class="divider"><span>Alert</span></div>
+
+      <section>
+        <div class="alert alert-info">
+          This is an info alert!
+        </div>
+
+        <div class="alert alert-success">
+          This is an success alert!
+        </div>
+
+        <div class="alert alert-warning">
+          This is an warning alert!
+        </div>
+
+        <div class="alert alert-error">
+          This is an error alert!
+        </div>
+      </section>
+
+      <!-- Badge -->
+
+      <div class="divider"><span>Badge</span></div>
+
+      <section>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-error">Error</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-info">Info</span>
+      </section>
+
+      <!-- Breadcrumb -->
+
+      <div class="divider"><span>Breadcrumb</span></div>
+
+      <section>
+        <nav>
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active"><a href="#">Data</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Card -->
+
+      <div class="divider"><span>Card</span></div>
+
+      <section>
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://picsum.photos/id/1021/200"
+                  alt="A placeholder image"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title">This is card title</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  quidem, repellendus minima id aliquid a delectus commodi
+                  voluptates ea est velit reprehenderit, reiciendis eveniet
+                  totam cumque labore alias neque error!
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="button button-secondary">Read More</button>
+                <button class="button button-primary">Bookmark</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://picsum.photos/id/1021/200"
+                  alt="A placeholder image"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title">This is card title</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  quidem, repellendus minima id aliquid a delectus commodi
+                  voluptates ea est velit reprehenderit, reiciendis eveniet
+                  totam cumque labore alias neque error!
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="button button-secondary">Read More</button>
+                <button class="button button-primary">Bookmark</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://picsum.photos/id/1021/200"
+                  alt="A placeholder image"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title">This is card title</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  quidem, repellendus minima id aliquid a delectus commodi
+                  voluptates ea est velit reprehenderit, reiciendis eveniet
+                  totam cumque labore alias neque error!
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="button button-secondary">Read More</button>
+                <button class="button button-primary">Bookmark</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img
+                  src="https://picsum.photos/id/1021/200"
+                  alt="A placeholder image"
+                />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <span class="card-title">This is card title</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae quidem, repellendus minima id aliquid a delectus
+                    commodi voluptates ea est velit reprehenderit, reiciendis
+                    eveniet totam cumque labore alias neque error!
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button class="button button-secondary">Read More</button>
+                  <button class="button button-primary">Bookmark</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img
+                  src="https://picsum.photos/id/1021/200"
+                  alt="A placeholder image"
+                />
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <span class="card-title">This is card title</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae quidem, repellendus minima id aliquid a delectus
+                    commodi voluptates ea est velit reprehenderit, reiciendis
+                    eveniet totam cumque labore alias neque error!
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button class="button button-secondary">Read More</button>
+                  <button class="button button-primary">Bookmark</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Image -->
+
+      <div class="divider"><span>Image</span></div>
+
+      <section>
+        <div class="row">
+          <div class="col-12">
+            <img
+              class="img-thumbnail"
+              src="https://picsum.photos/id/1021/200"
+              alt="A placeholder image"
+            />
+          </div>
+          <div class="col-12">
+            <img
+              class="img-rounded"
+              src="https://picsum.photos/id/1021/200"
+              alt="A placeholder image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Form -->
+
+      <div class="divider"><span>Form</span></div>
+
+      <section>
+        <form>
+          <div class="row">
+            <div class="col-6 m-1-b">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="First name"
+              />
+            </div>
+            <div class="col-6 m-1-b">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last name"
+              />
+            </div>
+            <div class="col-12 m-1-b">
+              <label for="emailAddress">Email address</label>
+              <input
+                type="email"
+                name="emailAddress"
+                id="emailAddress"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="col-12 m-1-b">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="col-6 m-1-b">
+              <label>Which languages do you know?</label>
+
+              <label
+                ><input type="checkbox" name="languages" value="js" />
+                Javascript</label
+              >
+              <label
+                ><input type="checkbox" name="languages" value="html" />
+                HTML</label
+              >
+              <label
+                ><input type="checkbox" name="languages" value="css" />
+                CSS</label
+              >
+            </div>
+            <div class="col-6 m-1-b">
+              <label>Choose your gender:</label>
+              <label><input type="radio" name="gender" value="m" /> Male</label>
+              <label
+                ><input type="radio" name="gender" value="f" /> Female</label
+              >
+              <label
+                ><input type="radio" name="gender" value="o" /> Others</label
+              >
+            </div>
+            <div class="col-6 m-1-b">
+              <label for="favCar">Choose your favorite car:</label>
+              <select name="favCar" id="favCar">
+                <option value="maruti800">Maruti 800</option>
+                <option value="alto">Alto</option>
+                <option value="nano">Nano</option>
+                <option value="swiftDesire">Swift Desire</option>
+                <option value="santro">Santro</option>
+              </select>
+            </div>
+            <div class="col-6 m-1-b">
+              <label for="cars">Choose as many cars you like:</label>
+              <select multiple name="cars" id="cars">
+                <option value="maruti800">Maruti 800</option>
+                <option value="alto">Alto</option>
+                <option value="nano">Nano</option>
+                <option value="swiftDesire">Swift Desire</option>
+                <option value="santro">Santro</option>
+              </select>
+            </div>
+            <div class="col-6 m-1-b">
+              <label for="bio">Tell us about yourself:</label>
+              <textarea
+                class="full-width"
+                name="bio"
+                id="bio"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="col-12 m-1-b">
+              <button type="submit" class="button button-primary">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Modal -->
+
+      <div class="divider"><span>Modal</span></div>
+
+      <section>
+        <div class="modal">
+          <div class="modal-dialog">
+            <div class="modal-header">
+              <div class="modal-title">Modal title</div>
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                labore vero odit. Nam est commodi molestiae consectetur hic ut
+                optio blanditiis veritatis quia, illum magni dicta debitis
+                dolores voluptate cum!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button class="button button-secondary">Cancel</button>
+              <button class="button button-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- List -->
+
+      <div class="divider"><span>List</span></div>
+
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <div class="list">
+              <div class="list-item">
+                Item 1
+              </div>
+              <div class="list-item">
+                Item 2
+              </div>
+              <div class="list-item">
+                Item 3
+              </div>
+              <div class="list-item">
+                Item 4
+              </div>
+              <div class="list-item">
+                Item 5
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tooltip -->
+
+      <div class="divider"><span>Tooltip</span></div>
+
+      <section>
+        <a href="#">Tooltip on top</a>
+      </section>
+
+      <!-- Table -->
+
+      <div class="divider"><span>Table</span></div>
+
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <h4>Bordered</h4>
+            <table class="bordered">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>101</td>
+                  <td>John</td>
+                  <td>33</td>
+                  <td>Indonesia</td>
+                </tr>
+                <tr>
+                  <td>102</td>
+                  <td>Hugh</td>
+                  <td>34</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>103</td>
+                  <td>Steve</td>
+                  <td>50</td>
+                  <td>England</td>
+                </tr>
+                <tr>
+                  <td>104</td>
+                  <td>Larry</td>
+                  <td>19</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>105</td>
+                  <td>Goldy</td>
+                  <td>11</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>106</td>
+                  <td>Stuart</td>
+                  <td>21</td>
+                  <td>England</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-6">
+            <h4>Stripped</h4>
+            <table class="stripped">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>101</td>
+                  <td>John</td>
+                  <td>33</td>
+                  <td>Indonesia</td>
+                </tr>
+                <tr>
+                  <td>102</td>
+                  <td>Hugh</td>
+                  <td>34</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>103</td>
+                  <td>Steve</td>
+                  <td>50</td>
+                  <td>England</td>
+                </tr>
+                <tr>
+                  <td>104</td>
+                  <td>Larry</td>
+                  <td>19</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>105</td>
+                  <td>Goldy</td>
+                  <td>11</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>106</td>
+                  <td>Stuart</td>
+                  <td>21</td>
+                  <td>England</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h4>Highlight</h4>
+            <table class="bordered highlight">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>101</td>
+                  <td>John</td>
+                  <td>33</td>
+                  <td>Indonesia</td>
+                </tr>
+                <tr>
+                  <td>102</td>
+                  <td>Hugh</td>
+                  <td>34</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>103</td>
+                  <td>Steve</td>
+                  <td>50</td>
+                  <td>England</td>
+                </tr>
+                <tr>
+                  <td>104</td>
+                  <td>Larry</td>
+                  <td>19</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>105</td>
+                  <td>Goldy</td>
+                  <td>11</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>106</td>
+                  <td>Stuart</td>
+                  <td>21</td>
+                  <td>England</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-6">
+            <h4>Centered</h4>
+            <table class="bordered centered">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>101</td>
+                  <td>John</td>
+                  <td>33</td>
+                  <td>Indonesia</td>
+                </tr>
+                <tr>
+                  <td>102</td>
+                  <td>Hugh</td>
+                  <td>34</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>103</td>
+                  <td>Steve</td>
+                  <td>50</td>
+                  <td>England</td>
+                </tr>
+                <tr>
+                  <td>104</td>
+                  <td>Larry</td>
+                  <td>19</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>105</td>
+                  <td>Goldy</td>
+                  <td>11</td>
+                  <td>USA</td>
+                </tr>
+                <tr>
+                  <td>106</td>
+                  <td>Stuart</td>
+                  <td>21</td>
+                  <td>England</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chip -->
+
+      <div class="divider"><span>Chip</span></div>
+
+      <section>
+        <div class="chip">Trouser <span class="close">&times</span></div>
+        <div class="chip">
+          Less than Rs. 1500 <span class="close">&times</span>
+        </div>
+        <div class="chip">
+          Less than Rs. 500 <span class="close">&times</span>
+        </div>
+        <div class="chip">Black <span class="close">&times</span></div>
+        <div class="chip">Levis <span class="close">&times</span></div>
+        <div class="chip">32 inches <span class="close">&times</span></div>
+      </section>
+
+      <!-- Navbar -->
+
+      <div class="divider"><span>Navbar</span></div>
+
+      <section>
+        <div class="navbar">
+          <div class="navbar-sidebar">&#9776;</div>
+          <div class="navbar-brand">Logo</div>
+          <div class="navbar-menu">
+            <div class="navbar-menu-item">Item 1</div>
+            <div class="navbar-menu-item">Item 2</div>
+            <div class="navbar-menu-item">Item 3</div>
+            <div class="navbar-menu-item">Item 4</div>
+            <div class="navbar-menu-item">Item 5</div>
+          </div>
+          <div class="navbar-right">
+            Settings
+          </div>
+        </div>
+      </section>
+
+      <!-- Drawer -->
+
+      <div class="divider"><span>Drawer</span></div>
+
+      <section>
+        <a href="#">Open the Drawer</a>
+      </section>
+
+      <!-- Sidenav -->
+
+      <div class="divider"><span>Sidenav</span></div>
+
+      <section>
+        <a href="#">Open the Sidenav</a>
+      </section>
+
+      <!-- Utilities -->
+
+      <div class="divider"><span>Utilities</span></div>
+
+      <section>
+        <h4>Alignment</h4>
+        <div class="flex">
+          <div class="flex-1 p-1 m-1 yellow text-left">1</div>
+          <div class="flex-1 p-1 m-1 yellow text-center">2</div>
+          <div class="flex-1 p-1 m-1 yellow text-right">3</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="sidenav drawer">
+      <div class="menu">
+        <div class="menu-header">Browse</div>
+        <ul class="list-unstyled">
+          <li>&#10047; Charts</li>
+          <li>&#10047; Genres</li>
+          <li>&#10047; New Releases</li>
+          <li>&#10047; Recommended</li>
+        </ul>
+      </div>
+      <div class="menu">
+        <div class="menu-header">Your Library</div>
+        <ul class="list-unstyled">
+          <li>&#10047; Recently Played</li>
+          <li>&#10047; Songs</li>
+          <li>&#10047; Albums</li>
+          <li>&#10047; Artists</li>
+        </ul>
+      </div>
+      <div class="menu">
+        <div class="menu-header">Playlists</div>
+        <ul class="list-unstyled">
+          <li>&#10047; Favorites</li>
+          <li>&#10047; Deep House</li>
+          <li>&#10047; Chill Rock</li>
+          <li>&#10047; Friday Night</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Progress -->
+
+    <div class="divider"><span>Progress</span></div>
+
+    <section>
+      <div class="row">
+        <div class="col-6">
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="m-1-b progress progress-info">
+            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+          </div>
+          <div class="m-1-b progress progress-error">
+            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+          </div>
+          <div class="m-1-b progress progress-warning">
+            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+          </div>
+          <div class="m-1-b progress progress-success">
+            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loader -->
+
+    <div class="divider"><span>Loader</span></div>
+
+    <section>
+      <div class="loader">
+        <div class="loader-linear"></div>
+      </div>
+
+      <div class="spinner spinner-small"></div>
+      <div class="spinner"></div>
+      <div class="spinner spinner-large"></div>
+    </section>
+
+    <!-- Content Placeholder -->
+
+    <div class="divider"><span>Content Placeholder</span></div>
+
+    <section>
+      <div class="flex align-items-center">
+        <div class="flex-1 text-center">
+          <div
+            class="cp cp-circle inline-block"
+            style="width: 100px; height: 100px;"
+          ></div>
+        </div>
+        <div class="flex-5">
+          <div class="cp cp-line m-1-b" style="height: 20px;"></div>
+          <div class="cp cp-line m-1-b" style="width: 80%; height: 20px;"></div>
+          <div class="cp cp-line m-1-b" style="width: 50%; height: 20px;"></div>
+          <div class="cp cp-box m-1-b" style="height: 50px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pagination -->
+    <div class="divider"><span>Pagination</span></div>
+
+    <section>
+      <ul class="pagination">
+        <li class="page-item">&laquo;</li>
+        <li class="page-item">1</li>
+        <li class="page-item active">2</li>
+        <li class="page-item">3</li>
+        <li class="page-item">4</li>
+        <li class="page-item">&raquo;</li>
+      </ul>
+    </section>
+
+    <script></script>
+  </body>
+</html>
