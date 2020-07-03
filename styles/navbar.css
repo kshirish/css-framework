@@ -1,0 +1,35 @@
+/* Navbar */
+
+.navbar {
+  display: flex;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar .navbar-sidebar {
+  flex: 1;
+  font-size: var(--font-xl);
+}
+
+.navbar .navbar-brand {
+  flex: 3;
+  font-size: var(--font-xxl);
+}
+
+.navbar .navbar-menu {
+  flex: 10;
+  display: flex;
+}
+
+.navbar .navbar-menu-item {
+  flex: 1;
+}
+
+.navbar .navbar-right {
+  flex: 3;
+  text-align: right;
+}

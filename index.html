@@ -11,8 +11,6 @@
     <style>
       body {
         background-color: #f7f7ff;
-        max-width: 1300px;
-        margin: 0 auto;
       }
       section {
         margin: 3rem 0;
@@ -26,8 +24,11 @@
         margin: 12rem;
       }
       .jumbotron .heading {
-        font-weight: 100;
+        font-weight: var(--font-light);
         font-size: 7.2rem;
+        background: radial-gradient(circle at top right, #f65b5bfa, #3f51b5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       .jumbotron .heading span {
         font-weight: 500;
@@ -35,6 +36,28 @@
       .jumbotron .subheading {
         font-size: 1.6rem;
         margin-top: 1.5rem;
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 8rem;
+        line-height: 2.2;
+        background: radial-gradient(circle at top right, #f65b5bfa, #3f51b5);
+        color: var(--white);
+        font-weight: var(--font-bold);
+      }
+      footer .social-media {
+        margin-bottom: 1.5rem;
+      }
+      footer .social-media img {
+        width: 2.5rem;
+      }
+      footer .social-media a:last-child img {
+        margin-left: 1.5rem;
+      }
+      footer .copyright {
+        line-height: 3;
       }
     </style>
   </head>
@@ -811,8 +834,159 @@
           <div class="flex-1 p-1 m-1 yellow text-right">3</div>
         </div>
       </section>
+
+      <!-- Progress -->
+
+      <div class="divider"><span>Progress</span></div>
+
+      <section>
+        <div class="row">
+          <div class="col-6">
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="m-1-b progress progress-info">
+              <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+            </div>
+            <div class="m-1-b progress progress-error">
+              <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+            </div>
+            <div class="m-1-b progress progress-warning">
+              <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+            </div>
+            <div class="m-1-b progress progress-success">
+              <div class="progress-bar" style="width: 70%; height: 5px;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Loader -->
+
+      <div class="divider"><span>Loader</span></div>
+
+      <section>
+        <div class="loader">
+          <div class="loader-linear"></div>
+        </div>
+
+        <div class="spinner spinner-small"></div>
+        <div class="spinner"></div>
+        <div class="spinner spinner-large"></div>
+      </section>
+
+      <!-- Content Placeholder -->
+
+      <div class="divider"><span>Content Placeholder</span></div>
+
+      <section>
+        <div class="flex align-items-center">
+          <div class="flex-1 text-center">
+            <div
+              class="cp cp-circle inline-block"
+              style="width: 100px; height: 100px;"
+            ></div>
+          </div>
+          <div class="flex-5">
+            <div class="cp cp-line m-1-b" style="height: 20px;"></div>
+            <div
+              class="cp cp-line m-1-b"
+              style="width: 80%; height: 20px;"
+            ></div>
+            <div
+              class="cp cp-line m-1-b"
+              style="width: 50%; height: 20px;"
+            ></div>
+            <div class="cp cp-box m-1-b" style="height: 50px;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pagination -->
+      <div class="divider"><span>Pagination</span></div>
+
+      <section>
+        <ul class="pagination">
+          <li class="page-item">&laquo;</li>
+          <li class="page-item">1</li>
+          <li class="page-item active">2</li>
+          <li class="page-item">3</li>
+          <li class="page-item">4</li>
+          <li class="page-item">&raquo;</li>
+        </ul>
+      </section>
+
+      <!-- Toast -->
+
+      <div class="divider"><span>Toast</span></div>
+
+      <section>
+        <a href="#">Release the Toast</a>
+      </section>
+
+      <!-- Animations -->
+
+      <div class="divider"><span>Animations</span></div>
+
+      <section>
+        <div class="row">
+          <div class="col-12">
+            <button class="grow-effect button button-primary">Grow</button>
+            <button class="shrink-effect button button-primary">Shrink</button>
+            <button class="pulse-effect button button-primary">Pulse</button>
+            <button class="push-effect button button-primary">Push</button>
+            <button class="pop-effect button button-primary">Pop</button>
+            <button class="bounce-effect button button-primary">Bounce</button>
+            <button class="grow-rotate-effect button button-primary">
+              Grow Rotate
+            </button>
+            <button class="float-effect button button-primary">Float</button>
+            <button class="wobble-effect button button-primary">Wobble</button>
+            <button class="forward-effect button button-primary">
+              Forward
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button class="fade-bg-effect button button-primary">Fade</button>
+            <button class="sweep-bg-effect button button-primary">Sweep</button>
+            <button class="bounce-bg-effect button button-primary">
+              Bounce
+            </button>
+            <button class="radial-bg-effect button button-primary">
+              Radial
+            </button>
+            <button class="rectangle-bg-effect button button-primary">
+              Rectangle
+            </button>
+            <button class="shutter-bg-effect button button-primary">
+              Shutter
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
 
+    <footer>
+      <div class="social-media">
+        <a href="https://github.com/kshirish"
+          ><img src="/images/github.svg" alt="github"
+        /></a>
+        <a href="https://www.linkedin.com/in/kisley-shirish-04295122/"
+          ><img src="/images/linkedin.svg" alt="linkedin"
+        /></a>
+      </div>
+      <div class="made-by">
+        Made by <br />
+        K Shirish - Javascript Developer
+      </div>
+      <div class="copyright"><small>Copyright &copy; 2020 </small></div>
+    </footer>
+
+    <div class="toast">I am a toast!</div>
     <div class="overlay"></div>
     <div class="sidenav drawer">
       <div class="menu">
@@ -843,84 +1017,6 @@
         </ul>
       </div>
     </div>
-
-    <!-- Progress -->
-
-    <div class="divider"><span>Progress</span></div>
-
-    <section>
-      <div class="row">
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="m-1-b progress progress-info">
-            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
-          </div>
-          <div class="m-1-b progress progress-error">
-            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
-          </div>
-          <div class="m-1-b progress progress-warning">
-            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
-          </div>
-          <div class="m-1-b progress progress-success">
-            <div class="progress-bar" style="width: 70%; height: 5px;"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Loader -->
-
-    <div class="divider"><span>Loader</span></div>
-
-    <section>
-      <div class="loader">
-        <div class="loader-linear"></div>
-      </div>
-
-      <div class="spinner spinner-small"></div>
-      <div class="spinner"></div>
-      <div class="spinner spinner-large"></div>
-    </section>
-
-    <!-- Content Placeholder -->
-
-    <div class="divider"><span>Content Placeholder</span></div>
-
-    <section>
-      <div class="flex align-items-center">
-        <div class="flex-1 text-center">
-          <div
-            class="cp cp-circle inline-block"
-            style="width: 100px; height: 100px;"
-          ></div>
-        </div>
-        <div class="flex-5">
-          <div class="cp cp-line m-1-b" style="height: 20px;"></div>
-          <div class="cp cp-line m-1-b" style="width: 80%; height: 20px;"></div>
-          <div class="cp cp-line m-1-b" style="width: 50%; height: 20px;"></div>
-          <div class="cp cp-box m-1-b" style="height: 50px;"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pagination -->
-    <div class="divider"><span>Pagination</span></div>
-
-    <section>
-      <ul class="pagination">
-        <li class="page-item">&laquo;</li>
-        <li class="page-item">1</li>
-        <li class="page-item active">2</li>
-        <li class="page-item">3</li>
-        <li class="page-item">4</li>
-        <li class="page-item">&raquo;</li>
-      </ul>
-    </section>
-
     <script></script>
   </body>
 </html>

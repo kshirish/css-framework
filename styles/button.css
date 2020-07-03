@@ -11,13 +11,15 @@
   text-transform: capitalize;
   text-decoration: none;
   color: #212121;
+  position: relative;
+  z-index: 0;
   background-color: transparent;
   border-radius: var(--border-radius);
   border: var(--border-size) solid var(--light-grey);
 }
 
 .button.button-primary {
-  border: var(--border-size) solid var(--primary);
+  border: none;
   background-color: var(--primary);
   color: var(--white);
 }
@@ -29,7 +31,7 @@
 }
 
 .button.button-red {
-  border: var(--border-size) solid var(--red);
+  border: none;
   background-color: var(--red);
   color: var(--white);
 }
@@ -41,13 +43,12 @@
 }
 
 .button.button-link.button-red {
-  border: none;
   background-color: transparent;
   color: var(--red);
 }
 
 .button.button-orange {
-  border: var(--border-size) solid var(--orange);
+  border: none;
   background-color: var(--orange);
   color: var(--white);
 }
@@ -59,13 +60,12 @@
 }
 
 .button.button-link.button-orange {
-  border: none;
   background-color: transparent;
   color: var(--orange);
 }
 
 .button.button-yellow {
-  border: var(--border-size) solid var(--yellow);
+  border: none;
   background-color: var(--yellow);
   color: var(--white);
 }
@@ -77,13 +77,12 @@
 }
 
 .button.button-link.button-yellow {
-  border: none;
   background-color: transparent;
   color: var(--yellow);
 }
 
 .button.button-lime {
-  border: var(--border-size) solid var(--lime);
+  border: none;
   background-color: var(--lime);
   color: var(--white);
 }
@@ -95,13 +94,12 @@
 }
 
 .button.button-link.button-lime {
-  border: none;
   background-color: transparent;
   color: var(--lime);
 }
 
 .button.button-green {
-  border: var(--border-size) solid var(--green);
+  border: none;
   background-color: var(--green);
   color: var(--white);
 }
@@ -113,13 +111,12 @@
 }
 
 .button.button-link.button-green {
-  border: none;
   background-color: transparent;
   color: var(--green);
 }
 
 .button.button-teal {
-  border: var(--border-size) solid var(--teal);
+  border: none;
   background-color: var(--teal);
   color: var(--white);
 }
@@ -131,13 +128,12 @@
 }
 
 .button.button-link.button-teal {
-  border: none;
   background-color: transparent;
   color: var(--teal);
 }
 
 .button.button-blue {
-  border: var(--border-size) solid var(--blue);
+  border: none;
   background-color: var(--blue);
   color: var(--white);
 }
@@ -149,13 +145,12 @@
 }
 
 .button.button-link.button-blue {
-  border: none;
   background-color: transparent;
   color: var(--blue);
 }
 
 .button.button-indigo {
-  border: var(--border-size) solid var(--indigo);
+  border: none;
   background-color: var(--indigo);
   color: var(--white);
 }
@@ -167,13 +162,12 @@
 }
 
 .button.button-link.button-indigo {
-  border: none;
   background-color: transparent;
   color: var(--indigo);
 }
 
 .button.button-purple {
-  border: var(--border-size) solid var(--purple);
+  border: none;
   background-color: var(--purple);
   color: var(--white);
 }
@@ -185,13 +179,12 @@
 }
 
 .button.button-link.button-purple {
-  border: none;
   background-color: transparent;
   color: var(--purple);
 }
 
 .button.button-pink {
-  border: var(--border-size) solid var(--pink);
+  border: none;
   background-color: var(--pink);
   color: var(--white);
 }
@@ -203,13 +196,12 @@
 }
 
 .button.button-link.button-pink {
-  border: none;
   background-color: transparent;
   color: var(--pink);
 }
 
 .button.button-brown {
-  border: var(--border-size) solid var(--brown);
+  border: none;
   background-color: var(--brown);
   color: var(--white);
 }
@@ -221,13 +213,12 @@
 }
 
 .button.button-link.button-brown {
-  border: none;
   background-color: transparent;
   color: var(--brown);
 }
 
 .button.button-black {
-  border: var(--border-size) solid var(--black);
+  border: none;
   background-color: var(--black);
   color: var(--white);
 }
@@ -239,7 +230,6 @@
 }
 
 .button.button-link.button-black {
-  border: none;
   background-color: transparent;
   color: var(--black);
 }
@@ -251,7 +241,7 @@
 }
 
 .button.button-grey {
-  border: var(--border-size) solid var(--light-grey);
+  border: none;
   background-color: var(--light-grey);
 }
 
@@ -261,7 +251,6 @@
 }
 
 .button.button-link.button-grey {
-  border: none;
   background-color: transparent;
   color: var(--grey);
 }

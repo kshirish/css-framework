@@ -1,0 +1,29 @@
+/* Badge */
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: var(--font-xs);
+  font-weight: var(--font-bold);
+  border-radius: var(--border-radius);
+}
+
+.badge.badge-info {
+  color: var(--white);
+  background-color: var(--info);
+}
+
+.badge.badge-success {
+  color: var(--white);
+  background-color: var(--success);
+}
+
+.badge.badge-error {
+  color: var(--white);
+  background-color: var(--error);
+}
+
+.badge.badge-warning {
+  color: var(--white);
+  background-color: var(--warning);
+}

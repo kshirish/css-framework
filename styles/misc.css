@@ -1,0 +1,105 @@
+/* Image */
+
+.img-thumbnail {
+  border: var(--border-size) solid var(--border-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.img-rounded {
+  border-radius: 100% !important;
+}
+
+/* List */
+
+.list {
+  border: var(--border-size) solid var(--border-color);
+  border-bottom: none;
+}
+
+.list .list-item {
+  border-bottom: var(--border-size) solid var(--border-color);
+  padding: 1.5rem;
+}
+
+/* Chip */
+
+.chip {
+  display: inline-block;
+  background: var(--light-grey);
+  font-weight: var(--font-bold);
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  box-shadow: 0rem 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.chip .close {
+  margin-left: 1rem;
+}
+
+/* Content Placeholder */
+
+.cp {
+  animation: fading 3s linear infinite;
+  background: var(--grey);
+}
+
+.cp.cp-line {
+}
+
+.cp.cp-box {
+}
+
+.cp.cp-circle {
+  border-radius: 100%;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+/* Pagination */
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+}
+
+.pagination .page-item {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-weight: var(--font-bold);
+  border-radius: var(--border-radius);
+  font-size: var(--font-md);
+}
+
+.pagination .page-item.active {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* Toast */
+
+.toast {
+  position: fixed;
+  bottom: 6rem;
+  right: 6rem;
+  background: var(--darker-grey);
+  color: var(--white);
+  z-index: 3;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+}

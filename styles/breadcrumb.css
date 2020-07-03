@@ -1,0 +1,29 @@
+/* Breadcrumb */
+
+.breadcrumb {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background-color: var(--lighter-grey);
+  border-radius: var(--border-radius);
+}
+
+.breadcrumb .breadcrumb-item {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.breadcrumb .breadcrumb-item:after {
+  content: '/';
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.breadcrumb .breadcrumb-item:last-child:after {
+  display: none;
+}
+
+.breadcrumb .breadcrumb-item.active,
+.breadcrumb .breadcrumb-item.active a {
+  color: var(--dark-grey);
+}

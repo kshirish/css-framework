@@ -1,0 +1,38 @@
+/* Modal */
+
+.modal {
+}
+
+.modal .modal-dialog {
+  border-radius: var(--border-radius);
+  box-shadow: 0rem 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal .modal-dialog .modal-header {
+  position: relative;
+  padding: 2rem 1.5rem;
+  background-color: var(--lighter-grey);
+}
+
+.modal .modal-header .modal-title {
+  margin: 0;
+  font-size: var(--font-l);
+  font-weight: var(--font-bold);
+}
+
+.modal .modal-header .close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  cursor: pointer;
+  font-size: var(--font-l);
+}
+
+.modal .modal-dialog .modal-body {
+  padding: 1.5rem;
+}
+
+.modal .modal-dialog .modal-footer {
+  padding: 1.5rem;
+  text-align: right;
+}

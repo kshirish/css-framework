@@ -1,0 +1,35 @@
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  font-weight: var(--font-bold);
+  padding: 1rem;
+  text-align: left;
+}
+
+table td {
+  padding: 1rem;
+}
+
+table.bordered th,
+table.bordered td {
+  border: var(--border-size) solid var(--border-color);
+}
+
+table.stripped tbody tr:nth-child(2n + 1) {
+  background-color: var(--lighter-grey);
+}
+
+table.highlight tr:hover {
+  background-color: var(--lighter-grey);
+  cursor: pointer;
+}
+
+table.centered th,
+table.centered tbody {
+  text-align: center;
+}

@@ -24,11 +24,10 @@
 - ~~Pagination~~
 - ~~Table~~
 - ~~Chip~~
-- Toast
+- ~~Toast~~
 - Timepicker
 - Datepicker
-- Wave (Gradient backgrounds + animation)
-- Pulse (Gradient backgrounds + animation)
+- ~~Gradient backgrounds + animation~~
 - Switch
 - Viewports support
-- Host on netlify/gh-pages
+- ~~Host on netlify/gh-pages~~

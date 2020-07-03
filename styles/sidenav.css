@@ -1,0 +1,50 @@
+/* Drawer */
+
+.drawer {
+  position: absolute;
+  background: var(--white);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30rem;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+body.drawer-open,
+body.sidenav-open {
+  overflow: hidden;
+}
+
+body.drawer-open .overlay,
+body.sidenav-open .overlay {
+  display: block;
+}
+
+body.drawer-open .drawer,
+body.sidenav-open .drawer {
+  transform: translateX(0%);
+}
+
+/* Sidenav */
+
+.sidenav {
+  padding: 1.5rem;
+  line-height: 2;
+}
+
+.sidenav .menu {
+  margin-bottom: 3rem;
+}
+
+.sidenav .menu-header {
+  font-weight: var(--font-bolder);
+  text-transform: uppercase;
+  color: var(--grey);
+  font-size: var(--font-xs);
+}
+
+.sidenav ul {
+  padding-left: 1.5rem;
+}

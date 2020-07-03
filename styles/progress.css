@@ -1,0 +1,41 @@
+/* Progress */
+
+.progress {
+  background-color: var(--light-indigo);
+}
+
+.progress .progress-bar {
+  background-color: var(--indigo);
+}
+
+.progress.progress-info {
+  background-color: var(--info-bg);
+}
+
+.progress.progress-info .progress-bar {
+  background-color: var(--info);
+}
+
+.progress.progress-error {
+  background-color: var(--error-bg);
+}
+
+.progress.progress-error .progress-bar {
+  background-color: var(--error);
+}
+
+.progress.progress-warning {
+  background-color: var(--warning-bg);
+}
+
+.progress.progress-warning .progress-bar {
+  background-color: var(--warning);
+}
+
+.progress.progress-success {
+  background-color: var(--success-bg);
+}
+
+.progress.progress-success .progress-bar {
+  background-color: var(--success);
+}
